@@ -1,0 +1,364 @@
+/* Variables */
+
+:root {
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-lightDark: #bbbbbb;
+  --clr-dark: #4d4d4d;
+
+
+  --fs-heading: 4rem;
+  --fs-heading-small:2rem;
+  --fs-heading-mobile:4rem;
+
+  --media-max-width:55em;
+
+}
+
+@font-face {
+  font-family: cursiveMain;
+  src: url(../font/Gistesy.ttf);
+}
+
+
+/* CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+ul {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 150ms ease-out;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/* NavBar Styling */
+
+.navFlex {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 2rem;
+  margin-left: 1rem;
+
+}
+
+.navLink li{
+  display: inline-block;
+  margin-inline: 2rem;
+  transition: 100ms ease-in;
+}
+
+.navLink li > a {
+  position: relative;
+}
+
+.navLink li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+
+  background-color: var(--clr-black);
+  border: none;
+  border-radius: 5px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 150ms ease-in;
+}
+
+.navLink li > a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Media query for small screens */
+@media screen and (width < 55em) {
+  .navLink {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-dark);
+    padding: 2rem;
+    z-index: 1;
+    transition: ease-in-out 250ms;
+  }
+  
+  .navLink li {
+    margin: 1rem 0; 
+  }
+  
+  .burgerMenu {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .navLink.active {
+      display: flex;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (width > 55em) {
+  .burgerMenu {
+      display: none; /* Hide the menu icon */
+  }
+}
+
+.logo {
+  margin: -0.5rem;
+  min-width: 2.25rem;
+  
+}
+
+/* Utility Classes */
+
+.fullvh {
+  min-height: 100vh;
+}
+
+.font-main {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.font-cursive {
+  font-family: cursiveMain, cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.clr-black {
+  color: var(--clr-black);
+}
+
+.clr-white {
+  color: var(--clr-white);
+}
+
+.clr-dark {
+  color: var(--clr-dark);
+}
+
+.clr-lightDark {
+  color: var(--clr-lightDark);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+.heading {
+  font-size: var(--fs-heading);
+}
+
+.headingSmall {
+  font-size: var(--fs-heading-small);
+}
+
+.displayNone {
+  display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/* Footer Styling */
+footer {
+  padding: 1.25rem;
+  gap: 1.5rem;
+  text-align: center;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  margin-top: auto;
+}
+
+.footerIconWrapper {
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.footerIcon {
+  color: white;
+  max-width: 1.25rem;
+  aspect-ratio: 1;
+}
+
+.footerText {
+  font-size: smaller;
+}
+
+img {
+  transition: ease-out 150ms;
+}
+
+img:not(.logo):hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+/*Font media queries*/
+
+/* For screen widths larger than 1280px */
+@media screen and (width > 1280px) {
+  .heading {
+    font-size: 4.5rem; /* Increase font size for headings */
+  }
+  
+  .body {
+    font-size: 1.1rem; /* Increase font size for body text */
+  }
+}
+
+/* For screen widths larger than 1440px */
+@media screen and (width > 1440px) {
+  .heading {
+    font-size: 5rem; /* Increase font size for headings */
+  }
+  
+  .body {
+    font-size: 1.2rem; /* Increase font size for body text */
+  }
+}
+
+/* For screen widths larger than 1600px */
+@media screen and (width > 1600px) {
+  .heading {
+    font-size: 5.5rem; /* Increase font size for headings */
+  }
+  
+  .body {
+    font-size: 1.3rem; /* Increase font size for body text */
+  }
+}
+
+/* For screen widths larger than 1920px */
+@media screen and (width > 1920px) {
+  .heading {
+    font-size: 6rem; /* Increase font size for headings */
+  }
+  
+  .body {
+    font-size: 1.4rem; /* Increase font size for body text */
+  }
+}
+
+/* For screen widths larger than 2560px */
+@media screen and (width > 2560px) {
+  .heading {
+    font-size: 6.5rem; /* Increase font size for headings */
+  }
+  
+  .body {
+    font-size: 1.5rem; /* Increase font size for body text */
+  }
+}

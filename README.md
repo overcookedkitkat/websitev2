@@ -1,2 +1,2 @@
-# websitev2
- Personal Portfolio Website V2
+# Website V2
+Second Take on my portfolio website
