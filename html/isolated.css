@@ -1,0 +1,187 @@
+/* Utility Classes */
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1040px;
+  }
+  
+  /* Column */
+  .col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  /* Alignment */
+  .align-r {
+    text-align: right !important;
+  }
+  
+  /* No Padding Bottom */
+  .nopad-b {
+    padding-bottom: 0 !important;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 6.4rem 3.2rem;
+  }
+  
+  section.dark {
+    background: #fafafa;
+    border-bottom: #dddddd solid 1px;
+  }
+  
+  section.nopad-b {
+    padding-bottom: 0 !important;
+  }
+  
+
+#bar-chart {
+    display: block;
+  }
+  .bar-chart {
+    list-style: none;
+    height: 450px;
+    position: relative;
+    background: url(https://www.adhamdannaway.com/wp-content/themes/dannaway/images/axis.png) repeat-x;
+    padding: 0;
+    margin: 0px;
+    /* Y Axis */
+  }
+  .bar-chart li {
+    display: inline-block;
+    width: 16%;
+    height: 100%;
+    background-color: #CCCCCC;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0 1.8% 0 0;
+    border: #BBBBBB solid 1px;
+    vertical-align: bottom;
+    border-bottom: #BBBBBB solid 1px;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+  }
+  .bar-chart li:nth-child(6n) {
+    margin-right: 0;
+  }
+  .bar-chart .percent {
+    opacity: 0.8;
+    position: absolute;
+    bottom: 50px;
+    font-size: 45px;
+    font-size: 4.5rem;
+    width: 100%;
+    line-height: 1em;
+  }
+  .bar-chart .percent span {
+    font-size: 24px;
+    font-size: 2.4rem;
+    padding-left: 3px;
+  }
+  .bar-chart .skill {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .bar-chart .p-30 {
+    height: 30%;
+  }
+  .bar-chart .p-40 {
+    height: 40%;
+  }
+  .bar-chart .p-75 {
+    height: 75%;
+  }
+  .bar-chart .p-80 {
+    height: 80%;
+  }
+  .bar-chart .p-85 {
+    height: 85%;
+  }
+  .bar-chart .p-90 {
+    height: 90%;
+  }
+  .bar-chart .p-95 {
+    height: 95%;
+  }
+  .bar-chart .p-100 {
+    height: 100%;
+  }
+  .bar-chart .aqua {
+    border-color: #8dc5be;
+    background-color: #5fb2a8;
+    background-image: -moz-linear-gradient(center bottom, #5fb2a8 0%, #b0dbd6 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5fb2a8), color-stop(1, #b0dbd6));
+    background-image: -webkit-linear-gradient(bottom, #5fb2a8, #b0dbd6);
+    background-image: -o-linear-gradient(bottom, #5fb2a8, #b0dbd6);
+    background-image: -ms-linear-gradient(bottom, #5fb2a8, #b0dbd6);
+    background-image: linear-gradient(#b0dbd6, #5fb2a8);
+  }
+  .bar-chart .pink {
+    border-color: #ebc0b5;
+    background-color: #e1ae9e;
+    background-image: -moz-linear-gradient(center bottom, #e1ae9e 0%, #f4dcd6 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1ae9e), color-stop(1, #f4dcd6));
+    background-image: -webkit-linear-gradient(bottom, #e1ae9e, #f4dcd6);
+    background-image: -o-linear-gradient(bottom, #e1ae9e, #f4dcd6);
+    background-image: -ms-linear-gradient(bottom, #e1ae9e, #f4dcd6);
+    background-image: linear-gradient(#f4dcd6, #e1ae9e);
+  }
+  .bar-chart .yellow {
+    border-color: #e7af30;
+    background-color: #dfae36;
+    background-image: -moz-linear-gradient(center bottom, #dfae36 0%, #efc563 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dfae36), color-stop(1, #efc563));
+    background-image: -webkit-linear-gradient(bottom, #dfae36, #efc563);
+    background-image: -o-linear-gradient(bottom, #dfae36, #efc563);
+    background-image: -ms-linear-gradient(bottom, #dfae36, #efc563);
+    background-image: linear-gradient(#efc563, #dfae36);
+  }
+  .bar-chart .brown {
+    border-color: #dcb386;
+    background-color: #bc8e5b;
+    background-image: -moz-linear-gradient(center bottom, #bc8e5b 0%, #dcba83 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bc8e5b), color-stop(1, #dcba83));
+    background-image: -webkit-linear-gradient(bottom, #bc8e5b, #dcba83);
+    background-image: -o-linear-gradient(bottom, #bc8e5b, #dcba83);
+    background-image: -ms-linear-gradient(bottom, #bc8e5b, #dcba83);
+    background-image: linear-gradient(#dcba83, #bc8e5b);
+  }
+  .bar-chart .red {
+    border-color: #e14949;
+    background-color: #ca4544;
+    background-image: -moz-linear-gradient(center bottom, #ca4544 0%, #da6d6c 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ca4544), color-stop(1, #da6d6c));
+    background-image: -webkit-linear-gradient(bottom, #ca4544, #da6d6c);
+    background-image: -o-linear-gradient(bottom, #ca4544, #da6d6c);
+    background-image: -ms-linear-gradient(bottom, #ca4544, #da6d6c);
+    background-image: linear-gradient(#da6d6c, #ca4544);
+  }
+  .bar-chart li.axis {
+    width: 8%;
+    border: 0;
+    border-right: #DDD solid 1px;
+    height: 450px;
+    background: #fafafa;
+    -webkit-box-shadow: inset 0 0 0 0 #ffffff;
+    -moz-box-shadow: inset 0 0 0 0 #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+  }
+  .bar-chart .label {
+    color: #757575;
+    margin: -0.6em 0 88px 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }

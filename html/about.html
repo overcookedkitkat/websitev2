@@ -11,40 +11,116 @@
     <link rel="shortcut icon" href="../static/image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/globalStyles.css">
     <link rel="stylesheet" href="../static/css/about.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-    <body class="flex col">
-        <header class="navFlex">
-            <a href="./index.html"><img src="../static/image/logo.svg" alt="logo" class="logo"></a>
-            <nav>
-                <ul class="navLink">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html" class="clr-lightDark">About</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact Me</a></li>
+<body class="flex col">
+    <header class="navFlex">
+        <a href="./index.html"><img src="../static/image/logo.svg" alt="logo" class="logo"></a>
+        <nav>
+            <ul class="navLink">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html" class="clr-lightDark">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+            <img src="../static/image/burgerMenu.svg" alt="Menu" class="burgerMenu" id="burgerMenu">
+        </nav>
+    </header>
+
+    <section class="about-section flexCenter col">
+        <div class="about-hero flexCenter row">
+            <div class="about-hero-content flex col">
+                <h1 class="about-hero-title">about.</h1>
+                <p class="about-hero-description">
+                    I'm a passionate designer and developer based in sunny Sydney, Australia. With over a decade of experience, I've honed my skills in creating intuitive and visually stunning digital experiences. When I'm not pushing pixels, you can find me exploring the great outdoors, experimenting in the kitchen, or tinkering with the latest tech.
+                </p>
+            </div>
+            <img src="/api/placeholder/400/400" alt="Placeholder Image" class="about-hero-image">
+        </div>
+
+        <div class="about-info-container flexCenter row">
+            <div class="about-info-part">
+                <h2 class="about-info-title">Part student</h2>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+            </div>
+            <img src="https://placehold.co/400" alt="Placeholder Image" class="about-facts-image">
+            <div class="about-info-part">
+                <h2 class="about-info-title">Part coder</h2>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+                <p class="info">hi</p>
+            </div>
+
+
+        </div>
+
+        <section class="about-facts-section flexCenter row">
+            <div class="about-facts-content flexCenter col">
+                <h2 class="about-facts-title">Random facts</h2>
+                <ul class="about-facts-list flexCenter col">
+                    <li class="about-fact">I feel alive when cruising on a motorbike under a starry sky.</li>
+                    <li class="about-fact">Practiced Judo and excelled in inter-house tournaments during school.</li>
+                    <li class="about-fact">Always on the lookout for tech-based solutions to social challenges.</li>
+                    <li class="about-fact">Been a part of the Nepal Cube Association, judging cube competitions.</li>
                 </ul>
-                <img src="../static/image/burgerMenu.svg" alt="Menu" class="burgerMenu" id="burgerMenu">
-            </nav>
-        </header>
-    
-        <footer class="flexCenter col">
-            <div class="footerIconWrapper flexCenter row">
-                <img src="../static/image/github.svg" alt="Github" id="Github" class="footerIcon">
-                <img src="../static/image/linkedin.svg" alt="Linkedin" id="Linkedin" class="footerIcon">
-                <img src="../static/image/codepen.svg" alt="Codepen" id="Codepen" class="footerIcon">
-                <img src="../static/image/instagram.svg" alt="Instagram" id="Instagram" class="footerIcon">
-                <img src="../static/image/email.svg" alt="Email" id="Email" class="footerIcon">
             </div>
-            <div class="footerText">
-                <p class="clr-lightDark">Copyright © 2024, All rights reserved</p>
-                <p class="clr-dark">Designed and Created by <a href="./index.html" class="underline">Biraj Sapkota</a></p>
+            <img src="/api/placeholder/400/400" alt="Placeholder Image" class="about-facts-image">
+        </section>
+
+        <div class="bar-chart">
+            <div class="axis">
+                <div class="label">Newbie</div>
+                <div class="label">Geek</div>
+                <div class="label">Ninja</div>
+                <div class="label">Jedi</div>
             </div>
-        </footer>
-    
-    
-    
-    
-        <script src="../static/js/global.js"></script>
-    
+            <div class="bars">
+                <div class="bar" id="tea-drinking">
+                    <div class="percent">95%</div>
+                    <div class="skill">Tea drinking</div>
+                </div>
+                <div class="bar" id="design-systems">
+                    <div class="percent">90%</div>
+                    <div class="skill">Design Systems</div>
+                </div>
+                <div class="bar" id="figma">
+                    <div class="percent">95%</div>
+                    <div class="skill">Figma</div>
+                </div>
+                <div class="bar" id="gardening">
+                    <div class="percent">75%</div>
+                    <div class="skill">Gardening</div>
+                </div>
+                <div class="bar" id="calisthenics">
+                    <div class="percent">40%</div>
+                    <div class="skill">Calisthenics</div>
+                </div>
+            </div>
+        </div>
+                
+    </section>
+
+    <footer class="flexCenter col">
+        <div class="footerIconWrapper flexCenter row">
+            <img src="../static/image/github.svg" alt="Github" id="Github" class="footerIcon">
+            <img src="../static/image/linkedin.svg" alt="Linkedin" id="Linkedin" class="footerIcon">
+            <img src="../static/image/codepen.svg" alt="Codepen" id="Codepen" class="footerIcon">
+            <img src="../static/image/instagram.svg" alt="Instagram" id="Instagram" class="footerIcon">
+            <img src="../static/image/email.svg" alt="Email" id="Email" class="footerIcon">
+        </div>
+        <div class="footerText">
+            <p class="clr-lightDark">Copyright © 2024, All rights reserved</p>
+            <p class="clr-dark">Designed and Created by <a href="./index.html" class="underline">Biraj Sapkota</a></p>
+        </div>
+    </footer>
+
+    <script src="../static/js/global.js"></script>
+    <script src="../static/js/about.js"></script>
 </body>
 </html>
