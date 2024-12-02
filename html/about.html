@@ -15,7 +15,7 @@
 </head>
 <body class="flex col">
     <header class="navFlex">
-        <a href="./index.html"><img src="../static/image/logo.svg" alt="logo" class="logo"></a>
+        <a href="../index.html"><img src="../static/image/logo.svg" alt="logo" class="logo"></a>
         <nav>
             <ul class="navLink">
                 <li><a href="../index.html">Home</a></li>
@@ -30,31 +30,31 @@
     <section class="about-section flexCenter col">
         <div class="about-hero flexCenter row">
             <div class="about-hero-content flex col">
-                <h1 class="about-hero-title">about.</h1>
-                <p class="about-hero-description">
-                    I'm a passionate designer and developer based in sunny Sydney, Australia. With over a decade of experience, I've honed my skills in creating intuitive and visually stunning digital experiences. When I'm not pushing pixels, you can find me exploring the great outdoors, experimenting in the kitchen, or tinkering with the latest tech.
+                <h1 class="about-hero-title font-main">about.</h1>
+                <p class="about-hero-description body">
+                    Born in Nepal, I'm a passionate student with interest in tech, space, bikes, cooking and occasionally photography. When I'm not banging my head at college works, you can find me exploring the outdoors, experimenting in the kitchen or disassembling a random piece of tech.
                 </p>
             </div>
-            <img src="/api/placeholder/400/400" alt="Placeholder Image" class="about-hero-image">
+            <img src="../static/image/me.png" alt="my picture" draggable="false" class="about-hero-image">
         </div>
 
         <div class="about-info-container flexCenter row">
             <div class="about-info-part">
                 <h2 class="about-info-title">Part student</h2>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
+                <p class="info">procrastinating</p>
+                <p class="info">intense thinking</p>
+                <p class="info">problem solving</p>
+                <p class="info">banging my head</p>
+                <p class="info">blaming the problem</p>
             </div>
-            <img src="https://placehold.co/400" alt="Placeholder Image" class="about-facts-image">
+            <img src="../static/image/piechart.png" alt="Placeholder Image" class="about-info-pie-chart">
             <div class="about-info-part">
                 <h2 class="about-info-title">Part coder</h2>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
-                <p class="info">hi</p>
+                <p class="info">html / css / js</p>
+                <p class="info">c, python, mysql</p>
+                <p class="info">swearing ay my computer</p>
+                <p class="info">procrastinating</p>
+                <p class="info">"if it works it works."</p>
             </div>
 
 
@@ -62,49 +62,47 @@
 
         <section class="about-facts-section flexCenter row">
             <div class="about-facts-content flexCenter col">
-                <h2 class="about-facts-title">Random facts</h2>
-                <ul class="about-facts-list flexCenter col">
-                    <li class="about-fact">I feel alive when cruising on a motorbike under a starry sky.</li>
-                    <li class="about-fact">Practiced Judo and excelled in inter-house tournaments during school.</li>
-                    <li class="about-fact">Always on the lookout for tech-based solutions to social challenges.</li>
-                    <li class="about-fact">Been a part of the Nepal Cube Association, judging cube competitions.</li>
-                </ul>
+                <h2 class="about-facts-title headingSmall ">Random facts</h2>
+                <div class="about-facts-list flexCenter col">
+                    <p class="about-fact">I love to cook (and eat spicy food)</p>
+                    <p class="about-fact">I am addicted to tea</p>
+                    <p class="about-fact">Biking gives me joy</p>
+                    <p class="about-fact">I wish to live in the top of the mountains at norway</p>
+                </div>
             </div>
-            <img src="/api/placeholder/400/400" alt="Placeholder Image" class="about-facts-image">
-        </section>
-
-        <div class="bar-chart">
-            <div class="axis">
-                <div class="label">Newbie</div>
-                <div class="label">Geek</div>
-                <div class="label">Ninja</div>
-                <div class="label">Jedi</div>
-            </div>
-            <div class="bars">
-                <div class="bar" id="tea-drinking">
-                    <div class="percent">95%</div>
-                    <div class="skill">Tea drinking</div>
-                </div>
-                <div class="bar" id="design-systems">
-                    <div class="percent">90%</div>
-                    <div class="skill">Design Systems</div>
-                </div>
-                <div class="bar" id="figma">
-                    <div class="percent">95%</div>
-                    <div class="skill">Figma</div>
-                </div>
-                <div class="bar" id="gardening">
-                    <div class="percent">75%</div>
-                    <div class="skill">Gardening</div>
-                </div>
-                <div class="bar" id="calisthenics">
-                    <div class="percent">40%</div>
-                    <div class="skill">Calisthenics</div>
-                </div>
+        </section> 
+    </section>
+    <section id="bar-chart" class="dark nopadb">
+        <div class="x">
+            <div class="col-12">
+    
+                <h2 class="align-r">My skills</h2>
+                <ul class="bar-chart">
+                    <li class="axis">
+                        <div class="label">Inferno</div>
+                        <div class="label">Hot</div>
+                        <div class="label">Medium</div>
+                        <div class="label">Mild</div>
+                    </li><li id="aqua" class="aqua" style="visibility: visible; height: 95%; opacity: 1;">
+                        <div class="percent">95<span>%</span></div>
+                        <div class="skill">Procrastinating</div>
+                    </li><li id="pink" class="pink" style="visibility: visible; height: 50%; opacity: 1;">
+                        <div class="percent">50<span>%</span></div>
+                        <div class="skill">Programming</div>
+                    </li><li id="yellow" class="yellow" style="visibility: visible; height: 60%; opacity: 1;">
+                        <div class="percent">60<span>%</span></div>
+                        <div class="skill">Cooking</div>
+                    </li><li id="brown" class="brown" style="visibility: visible; height: 10%; opacity: 1;">
+                        <div class="percent" style="color: grey;">10<span>%</span></div>
+                        <div class="skill">Baking</div>
+                    </li><li id="red" class="red" style="visibility: visible; height: 40%; opacity: 1;">
+                        <div class="percent">40<span>%</span></div>
+                        <div class="skill">Speedcubing</div>
+                    </li></ul>
+            
             </div>
         </div>
-                
-    </section>
+    </section> 
 
     <footer class="flexCenter col">
         <div class="footerIconWrapper flexCenter row">

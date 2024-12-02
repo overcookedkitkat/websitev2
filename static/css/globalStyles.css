@@ -172,6 +172,28 @@ select {
     .navLink.active {
       display: flex;
   }
+  .about-hero-image {
+    display: none;
+  }
+
+  .about-info-part {
+    text-align: center;
+  }
+
+  div.about-info-container {
+    flex-direction: column!important;
+  }
+
+  .about-facts-image {
+    display: none;
+  }
+  section#bar-chart {
+    display: none;
+  }
+
+  .about-hero {
+    padding: 1rem;
+  }
 }
 
 /* Media query for larger screens */
@@ -270,6 +292,10 @@ select {
   display: none;
 }
 
+.nopadb {
+  padding-bottom: 0!important;
+}
+
 /*----------------------------------------------------------------------------------------------------------------*/
 
 /* Footer Styling */
@@ -297,11 +323,13 @@ footer {
   font-size: smaller;
 }
 
-img {
+img,
+.about-facts-content {
   transition: ease-out 150ms;
 }
 
-img:not(.logo):hover {
+img:not(.logo):hover,
+.about-facts-content:hover {
   transform: translateY(-3px);
   cursor: pointer;
 }
